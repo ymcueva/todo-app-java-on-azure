@@ -8,10 +8,10 @@ if ! az group list >/dev/null 2>&1; then
     exit 1
 fi
 
-resource_group=<your-resource-group-name>
-location=<your-location>
-aks_name=<your-kubernetes-cluster-name>
-dns_name_suffix=<your-dns-name-suffix>
+resource_group=rsgrymcueva15
+location=eastus
+aks_name=aksymcueva15
+dns_name_suffix=aksymcueva-rsgrymcueva15-e5670b
 companion_rg="MC_${resource_group}_${aks_name}_${location}"
 
 echo "Checking resource group $resource_group..."
