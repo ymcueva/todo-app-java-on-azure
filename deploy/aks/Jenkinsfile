@@ -41,7 +41,9 @@ node('master') {
     }
 
     stage('Docker Image') {
+        	    print "stage******************************************************************"
         withDockerRegistry([credentialsId: dockerCredentialId, url: "http://${dockerRegistry}"]) {
+            	    print "docker registry start**********************************************"
             dir('target') {
                 sh """
                     cp -f ../src/aks/Dockerfile .
