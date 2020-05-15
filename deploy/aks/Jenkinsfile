@@ -46,7 +46,7 @@ node('master') {
             	    print "docker registry start**********************************************"
             dir('target') {
                 sh """
-                    cp -f ../Dockerfile .
+                    cp -f Dockerfile .
                     docker build -t "${env.IMAGE_TAG}" .
                     docker push "${env.IMAGE_TAG}"
                 """
