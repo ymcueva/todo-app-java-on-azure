@@ -95,7 +95,7 @@ node('master') {
         acsDeploy azureCredentialsId: servicePrincipalId,
                   resourceGroupName: resourceGroup,
                   containerService: "${aks} | AKS",
-                  configFilePaths: 'src/aks/deployment.yml',
+                  configFilePaths: 'deploy/aks/deployment.yml',
                   enableConfigSubstitution: true,
                   secretName: dockerRegistry,
                   containerRegistryCredentials: [[credentialsId: dockerCredentialId, url: "http://${dockerRegistry}"]]
