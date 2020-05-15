@@ -1,6 +1,6 @@
 node('master') {
 
-    def servicePrincipalId = '08b065b8-6011-44f8-ba27-a35365a48a56'
+    def servicePrincipalId = 'svpymcueva15'
     def resourceGroup = 'rsgrymcueva15'
     def aks = 'aksymcueva15'
 
