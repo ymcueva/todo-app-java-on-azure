@@ -11,7 +11,7 @@ node('master') {
     def dockerRegistry = 'acrymcueva15.azurecr.io'
     def imageName = "todo-app:${env.BUILD_NUMBER}"
     env.IMAGE_TAG = "${dockerRegistry}/${imageName}"
-    def dockerCredentialId = 'j4qyR+lSSfLyQyrn0Q0fwbXaIHRRwHpX'
+    def dockerCredentialId = 'acrymcueva15'
 
     def currentEnvironment = 'blue'
     def newEnvironment = { ->
